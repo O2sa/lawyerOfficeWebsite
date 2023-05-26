@@ -1,0 +1,66 @@
+.setting-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: 0.3s;
+    padding: 20px;
+.option-title{
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0 15px;
+}
+    .toggle-setting {
+        position: absolute;
+        left: -48px;
+        top: 100px;
+        background-color: #fff;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 5px 0 0 5px;
+        cursor: pointer;
+    }
+
+    &.hide-setting {
+        right: -250px;
+
+    }
+    .option-box{
+        margin: 10px;
+        border: solid 1px;
+
+    }
+
+    .color-options {
+        ul {
+            $colors: #27ae60, #2980b9, #c0392b,orange,purple, black;
+
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{$i}) {
+                    background-color: nth($colors, $i);
+                }
+            }
+            li{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                opacity: 0.5;
+                display: inline-block;
+                cursor: pointer;
+                &.active{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .font-options{
+        select{
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+    }
+
+}

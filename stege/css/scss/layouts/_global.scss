@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+
+  // font-family: 'Gulzar', serif;
+// font-family: 'Reem Kufi Fun', sans-serif !important;
+font-family: 'Tajawal', sans-serif !important;
+  
+  &.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  &.roboto{
+    font-family: 'Roboto', sans-serif;
+
+  }
+  &.open{
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  &.source{
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+}
+.page{
+    min-height: 100vh;
+    .content-area{
+        width: calc(100% - 250px);
+        min-height: 100vh;
+        transition: .3s;
+        will-change: width;
+        background-color: #f2f1f2;
+        float: right;
+        &.no-sidebar{
+            width: 100%;
+        }
+    }
+    .page-head{
+        margin-top: 20px;
+        padding: 20px;
+        .page-title{
+            font-weight: bold;
+            color: #27ae60;
+
+        }
+        .page-description{
+             
+        }
+    }
+}
