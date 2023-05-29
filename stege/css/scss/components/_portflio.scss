@@ -9,7 +9,7 @@ $border-color_1: transparent transparent #fff transparent;
 /* Start Landing Page */
 /* End Landing Page */
 .landing-page {
-    max-height: 100vh;
+    min-height: 100vh;
     position: relative;
 padding: 0;
 margin: 0;
@@ -21,7 +21,7 @@ h2{
     font-weight: bold;
 }
 img{
-    max-height: 100vh;
+height: 100vh;
 }
 
     .overlay {
