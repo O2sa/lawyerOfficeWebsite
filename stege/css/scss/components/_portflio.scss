@@ -9,11 +9,20 @@ $border-color_1: transparent transparent #fff transparent;
 /* Start Landing Page */
 /* End Landing Page */
 .landing-page {
-    min-height: 100vh;
-    background-image: url("../images/background-4.jpg");
-    background-size: cover;
+    max-height: 100vh;
     position: relative;
-    transition: 1s;
+padding: 0;
+margin: 0;
+h2{
+    position: absolute;
+    top: 0;
+    right: 45%;
+    color: white;
+    font-weight: bold;
+}
+img{
+    max-height: 100vh;
+}
 
     .overlay {
         position: absolute;
@@ -24,6 +33,10 @@ $border-color_1: transparent transparent #fff transparent;
         background-color: $background-color_1;
     }
 .header-container{
+    position: absolute;
+    top: 0;
+    color: white;
+    font-weight: bold;
 border-color:transparent transparent #fff;    
 border-width: 1px;
 

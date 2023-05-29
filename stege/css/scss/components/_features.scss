@@ -1,0 +1,47 @@
+$color_1: var(--main-color);
+$color_2: #706f6f;
+$background-color_1: var(--main-color);
+
+/* End Features */
+.features {
+	
+	h2 {
+		color: $color_1;
+		font-weight: bold;
+		font-size: 30px;
+		margin: 0 0 60px;
+		text-align: center;
+	}
+	.feat-box {
+		margin-bottom: 40px;
+		text-align: center;
+		img {
+			width: 96px;
+			height: 96px;
+			border-radius: 50%;
+			padding: 3px;
+			border: 3px solid #706f6f;
+		}
+		h4 {
+			font-size: 22px;
+			margin: 15px 0 40px;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 40px;
+				height: 4px;
+				background-color: $background-color_1;
+				margin-left: -20px;
+				left: 50%;
+				bottom: -22px;
+			}
+		}
+		p {
+			width: 80%;
+			margin: 0 auto;
+			line-height: 1.7;
+			color: $color_2;
+		}
+	}
+}

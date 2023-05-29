@@ -1,6 +1,27 @@
 // Start Landing Page
 .landing-page
-  .overlay
+  #demo.carousel.slide(data-bs-ride='carousel')
+        // Indicators/dots
+        .carousel-indicators
+            button.active(type='button' data-bs-target='#demo' data-bs-slide-to='0')
+            button(type='button' data-bs-target='#demo' data-bs-slide-to='1')
+            button(type='button' data-bs-target='#demo' data-bs-slide-to='2')
+        // The slideshow/carousel
+        .carousel-inner
+            .carousel-item.active
+                .overlay
+                img.d-block.w-100(src='images/background-1.jpg' alt='Los Angeles')
+            .carousel-item
+                .overlay
+                img.d-block.w-100(src='images/background-2.jpg' alt='Chicago')
+            .carousel-item
+                .overlay
+                img.d-block.w-100(src='images/background-3.jpg' alt='New York')
+        // Left and right controls/icons
+        button.carousel-control-prev(type='button' data-bs-target='#demo' data-bs-slide='prev')
+            span.carousel-control-prev-icon
+        button.carousel-control-next(type='button' data-bs-target='#demo' data-bs-slide='next')
+            span.carousel-control-next-icon
   .container.header-container
     .header-area
       .logo مَكتب النبلاء
@@ -30,8 +51,7 @@
         br
         |  القانوني
     //- pre.qotet-text 
-    <blockquote>
+    pre.qotet-text
       |"قَومٌ إِذا اِستُخصِموا كانوا فَراعِنَةً
       | يَوماً وَإِن حُكِّموا كانوا مَوازينا"
-    </blockquote>
 // End Landing Page

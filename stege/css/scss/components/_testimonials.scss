@@ -1,0 +1,68 @@
+$color_1: #fff;
+$color_2: #707070;
+$background-color_1: var(--main-color);
+$background-color_2: #333;
+$background-color_3: #fff;
+
+.testimonials {
+	position: relative;
+	&::before {
+		content: "";
+		width: 50%;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: orange;
+		z-index: -4;
+	}
+	&::after {
+		content: "";
+		width: 50%;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: $background-color_2;
+		z-index: -4;
+	}
+	h2 {
+		color: $color_1;
+		font-weight: bold;
+		font-size: 30px;
+		margin: 0 0 60px;
+		text-align: center;
+		text-shadow: -3px -4px 2px black;
+	}
+	.ts-box {
+        position: relative;
+        right: 10%;
+        width: 80%;
+		background-color: $background-color_3;
+		>p {
+			margin: 0 0 20px;
+			line-height: 1.6;
+			font-style: italic;
+			font-size: 18px;
+			color: $color_2;
+			text-align: center;
+		}
+		.person-info {
+            text-align: center;
+			// overflow: hidden;
+			h4 {
+				margin: 14px 0 10px;
+			}
+			p {
+				margin: 0;
+				color: $color_2;
+			}
+			img {
+				height: 100px;
+				width: 100px;
+				margin-right: 10px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
