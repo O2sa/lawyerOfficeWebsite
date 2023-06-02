@@ -4,7 +4,7 @@
     right: 0;
     width: 250px;
     height: 100%;
-    background-color: #fff;
+    background-color: #dee2e6;
     z-index: 1000;
     transition: 0.3s;
     padding: 20px;
@@ -15,12 +15,15 @@
 }
     .toggle-setting {
         position: absolute;
-        left: -48px;
+        left: -35px;
         top: 100px;
-        background-color: #fff;
+        height: 47px;
+        width: 48px;
+        text-align: center;
+        background-color: #dee2e6;
         padding: 15px;
-        font-size: 22px;
-        border-radius: 5px 0 0 5px;
+        font-size: 18px;
+        border-radius: 20px 0 0 20px;
         cursor: pointer;
     }
 
@@ -36,7 +39,9 @@
 
     .color-options {
         ul {
-            $colors: #27ae60, #2980b9, #c0392b,orange,purple, black;
+            text-align: center;
+            padding: 0;
+            $colors: #27ae60, #2980b9, #c0392b,orange;
 
             @for $i from 1 through length($colors) {
                 li:nth-child(#{$i}) {
@@ -59,6 +64,8 @@
     .font-options{
         select{
             text-transform: capitalize;
+    background-color: #dee2e6;
+
             cursor: pointer;
         }
     }

@@ -15,7 +15,7 @@
 
   &::before {
             content: "";
-            background-color: #c5a48c;
+            background-color: var(--main-color);
             width: 15px;
             height: 100%;
             opacity:0.7 ;
@@ -25,11 +25,11 @@
         }
 
         .about-head {
-            color: #212529;
-            font-size: 36px;
-            font-weight: bold;
-            text-align: center;
-            margin-right: 20px;
+            // color: #212529;
+            // font-size: 36px;
+            // font-weight: bold;
+            // text-align: center;
+            // margin-right: 20px;
         }
     }
 
@@ -41,7 +41,7 @@
         &::before {
             position: absolute;
             content: "";
-            background-color: #c5a48c;
+            background-color: var(--main-color);
             width: 300px;
             height: 300px;
             border-radius: 50%;

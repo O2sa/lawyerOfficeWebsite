@@ -1,0 +1,124 @@
+$color_1: white;
+$color_2: #f1f1f1;
+$color_3: #f44336;
+$background-color_1: #ddd;
+$background-color_2: #04AA6D;
+$background-color_3: #f44336;
+$background-color_4: #474e5d;
+$background-color_5: #fefefe;
+
+/* Full-width input fields */
+/* Add a background color when the inputs get focus */
+/* Set a style for all buttons */
+/* Extra styles for the cancel button */
+/* Float cancel and signup buttons and add an equal width */
+/* Add padding to container elements */
+/* The Modal (background) */
+/* Modal Content/Box */
+/* Style the horizontal ruler */
+/* The Close Button (x) */
+/* Clear floats */
+/* Change styles for cancel button and signup button on extra small screens */
+input[type=text] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	&:focus {
+		background-color: $background-color_1;
+		outline: none;
+	}
+}
+input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	&:focus {
+		background-color: $background-color_1;
+		outline: none;
+	}
+}
+button {
+	background-color: $background-color_2;
+	color: $color_1;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+	&:hover {
+		opacity: 1;
+	}
+}
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: $background-color_3;
+	float: left;
+	width: 50%;
+}
+.signupbtn {
+	float: left;
+	width: 50%;
+}
+.container {
+	padding: 16px;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: $background-color_4;
+	padding-top: 50px;
+}
+.modal-content {
+	background-color: $background-color_5;
+	margin: 5% auto 15% auto;
+	border: 1px solid #888;
+	width: 80%;
+}
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+.close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: $color_2;
+	&:hover {
+		color: $color_3;
+		cursor: pointer;
+	}
+	&:focus {
+		color: $color_3;
+		cursor: pointer;
+	}
+}
+.clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+@media screen and (max-width: 300px) {
+	.cancelbtn {
+		width: 100%;
+	}
+	.signupbtn {
+		width: 100%;
+	}
+}

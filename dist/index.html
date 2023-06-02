@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
-    <title>Homepage</title>
+    <title>مكتب النبلاء</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="images/background-1.jpg">
   </head>
   <body> 
     <div class="page home-page">
@@ -37,15 +38,14 @@
         </div>
         <div class="container header-container">
           <div class="header-area">
-            <div class="logo">مَكتب النبلاء</div>
+            <div class="logo navbar-brand">مَكتب النبلاء</div>
             <div class="links-container">
               <ul class="links">
-                <li><span class="active" data-section=".about-us"> عنَّا</span></li>
-                <li><span data-section=".skills">خدماتنا</span></li>
-                <li><span data-section=".gallery">أعمالنا</span></li>
-                <li><span data-section=".timeline">الخط الزمني</span></li>
+                <li><span class="active" data-section=".about"> عنَّا</span></li>
+                <li><span data-section=".services">خدماتنا</span></li>
                 <li><span data-section=".features">مميزاتنا</span></li>
                 <li><span data-section=".testimonials">التوصيات</span></li>
+                <li><span data-section=".contact">التواصل</span></li>
               </ul>
               <button class="toggle-menu"><span></span><span></span><span></span></button>
             </div>
@@ -58,6 +58,81 @@
         </div>
       </div>
       <!-- End Landing Page-->
+      <div class="nav-bullets">
+        <div class="bullet" data-section=".about">
+          <div class="my-tooltip">عنا</div>
+        </div>
+        <div class="bullet" data-section=".services">
+          <div class="my-tooltip">خدماتنا</div>
+        </div>
+        <div class="bullet" data-section=".features">
+          <div class="my-tooltip">مميزاتنا</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+          <div class="my-tooltip">التوصيات</div>
+        </div>
+        <div class="bullet" data-section=".contact">
+          <div class="my-tooltip">التواصل</div>
+        </div>
+      </div>
+      <!-- End Nav Bullets-->
+      <div class="setting-box hide-setting">
+        <div class="toggle-setting"><i class="fa-solid fa-gear fa-xl"></i></div>
+        <div class="setting-content">
+          <h3>الإعدادات المرئية</h3>
+          <div class="option-box color-options text-center">
+            <h4 class="option-title">اختر لون المظهر:</h4>
+            <ul class="list-unstyled">
+              <li data-theme="#27ae60"></li>
+              <li data-theme="#2980b9"></li>
+              <li data-theme="#c0392b"></li>
+              <li data-theme="orange"></li>
+            </ul>
+          </div>
+          <div class="option-box text-center font-options">
+            <h4 class="option-title">اختر الخط:</h4>
+            <select class="form-control text-center">
+              <option value="open">open Font</option>
+              <option value="ubuntu">ubuntu Font</option>
+              <option value="roboto">roboto Font</option>
+              <option value="source">source Font</option>
+            </select>
+          </div>
+          <div class="option-box text-center">
+            <h4 class="option-title">ختر الخلفية</h4>
+          </div>
+          <div class="option-box login-box"> 
+            <h3>قم بإنشاء حساب لمتابعة جديدنا:</h3>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">إنشاء حساب</button>
+            <div class="modal" id="id01"><span class="close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">&times;</span>
+              <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                  <h3>إنشاء حساب</h3>
+                  <p>إملىء الخانات الظاهره أدناه</p>
+                  <hr>
+                  <label for="email"><b>الإميل</b></label>
+                  <input type="text" placeholder="أدخل الايميل" name="email" required="">
+                  <label for="name"><b>الاسم</b></label>
+                  <input type="text" placeholder="أدخل الاسم" name="name" required="">
+                  <label for="psw"><b>كلمة السر</b></label>
+                  <input type="password" placeholder="أدخل كلمة السر" name="psw" required="">
+                  <label for="psw-repeat"><b>كرر كلمة السر</b></label>
+                  <input type="password" placeholder="أعد ادخال كلمة السر" name="psw-repeat" required="">
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> تذكرني
+                  </label>
+                  <p>بإنشاءك هذا الحساب فأنت توافق على <a href="#" style="color:dodgerblue">مبادئنا &amp; سياستنا</a>.</p>
+                  <div class="clearfix">
+                    <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">إلغاء</button>
+                    <button class="signupbtn" type="submit">إنشاء</button>
+                  </div>
+                  <h4 class="text-center"><a href="#">لديك حسابًا بالفعل؟</a></h4>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="services">
         <div class="container">
           <h2>خدماتنا</h2>
@@ -98,7 +173,7 @@
         <div class="container"> 
           <div class="row">
             <div class="col-md-6 col-xs-12 about-text">
-              <h3 class="about-head"> من نحن </h3>
+              <h2 class="about-head"> من نحن </h2>
               <p class="about-paragraph">
                  قال الأصمعي: (قلت لدرواس الأعرابي: ما جعل بني فلان أشرف من بني فلان؟ قال: الكتاب. يعني (القدَر)، ولم يقل: المكارم والفعال). وقال الجاحظ: (وهل أهلك عنزة، وجرما، وعكلا، وسلول، وباهلة، وغنيا، إلا الهجاء؟ وهذه قبائل فيها فضل كثير وبعض النقص، فمحق ذلك الفضل كله هجاء الشعراء).</p>
             </div>
@@ -146,40 +221,39 @@
       </section>
       <!-- End Features-->
       <section class="testimonials">
-        <div class="container">
-          <div class="carousel slide" id="demo" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="ts-box">
-                  <p>كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
-                  <div class="person-info"><img src="images/person-01.jpg" alt="">
-                    <h4>أحمد عباس</h4>
-                    <p>CEO at the company</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="ts-box">
-                  <p>كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
-                  <div class="person-info"><img src="images/person-01.jpg" alt="">
-                    <h4>علي صالح</h4>
-                    <p>CEO at the company</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="ts-box">
-                  <p>كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
-                  <div class="person-info"><img src="images/person-01.jpg" alt="">
-                    <h4>قاسم عبده</h4>
-                    <p>CEO at the company</p>
-                  </div>
+        <h2>التوصيات</h2>
+        <div class="carousel slide" id="demo" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="ts-box">
+                <p>كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
+                <div class="person-info"><img src="images/person-01.jpg" alt="">
+                  <h4>أحمد عباس</h4>
+                  <p>CEO at the company</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            <div class="carousel-item">
+              <div class="ts-box">
+                <p>كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
+                <div class="person-info"><img src="images/person-01.jpg" alt="">
+                  <h4>علي صالح</h4>
+                  <p>CEO at the company</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ts-box">
+                <p>كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
+                <div class="person-info"><img src="images/person-01.jpg" alt="">
+                  <h4>قاسم عبده</h4>
+                  <p>CEO at the company</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
         </div>
       </section>
       <section class="contact">
@@ -200,6 +274,27 @@
               </div>
             </div>
           </form>
+        </div>
+      </section>
+      <section class="footer"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xs-12 contact-details">
+              <h3>التفاصيل</h3>
+              <p> <b>مكتب النبلاء</b><br> اليمن, صنعاء, جولة 45<br><b>الهاتف: </b>+967 777 777 777<br><b>عنوان التراسل: </b>info@example.com<br><br><b>ساعات العمل: </b>3 - 12 PM</p>
+            </div>
+            <div class="col-lg-6 col-xs-12 about-site text-center">
+              <h3>ومضة عن الموقع</h3>
+              <p>
+                 كتابة عقود بلغةٍ عربيةٍ فصيحة، لا يشبها ضعف ولا خطل، من قبل متخصصين ضالعين في المجال.</p>
+              <ul class="list-unstyled text-center">
+                <li> <i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></li>
+                <li> <i class="fab fa-facebook fa-lg" style="color: #ffffff;"></i></li>
+                <li> <i class="fab fa-instagram fa-lg" style="color: #ffffff;"> </i></li>
+                <li> <i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -11,19 +11,28 @@ $border-color_1: transparent transparent #fff transparent;
 .landing-page {
     min-height: 100vh;
     position: relative;
-padding: 0;
-margin: 0;
-h2{
-    position: absolute;
-    top: 0;
-    right: 45%;
-    color: white;
-    font-weight: bold;
-}
-img{
-height: 100vh;
-}
+    padding: 0;
+    margin: 0;
 
+    h2 {
+        position: absolute;
+        top: 0;
+        right: 45%;
+        color: white;
+        font-weight: bold;
+    }
+
+    img {
+        height: 100vh;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        position: absolute;
+        height: fit-content;
+        top: 50%;
+    }
+    // .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+    //     color: var(--main-color) !important;
+    // }
     .overlay {
         position: absolute;
         top: 0;
@@ -32,27 +41,33 @@ height: 100vh;
         height: 100%;
         background-color: $background-color_1;
     }
-.header-container{
-    position: absolute;
-    top: 0;
-    color: white;
-    font-weight: bold;
-border-color:transparent transparent #fff;    
-border-width: 1px;
 
-border-style: solid;
-}
+    .header-container {
+        top: 8%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        // border-color: transparent transparent #fff;
+        // border-width: 1px;
+
+        // border-style: solid;
+    }
+
     .header-area {
         position: relative;
         color: $color_1;
         display: flex;
         padding: 10px;
-        font-family: 'Gulzar', serif;
+        align-items: center;
 
         .logo {
             width: 300px;
+        font-family: 'Gulzar', serif;
             padding: 15px;
             font-weight: bold;
+            font-size: 26px;
         }
 
         .links {
@@ -72,12 +87,12 @@ border-style: solid;
                     cursor: pointer;
 
                     &:hover {
-                        color: $color_2;
+                        color: var(--main-color);
                     }
                 }
 
                 span.active {
-                    color: $color_2;
+                    color: var(--main-color);
                 }
             }
         }
@@ -115,29 +130,31 @@ border-style: solid;
             }
         }
     }
+
     .intro-text {
         position: absolute;
         top: 50%;
         font-family: 'Reem Kufi Fun', sans-serif !important;
-    
+
         left: 50%;
         transform: translate(-50%, -50%);
         color: $color_1;
         text-align: center;
         width: 92%;
-    
+
         h1 {
             font-size: 34px;
             margin: 0 0 20px;
         }
-        .qotet-text  {
+
+        .qotet-text {
             line-height: 1.6;
             font-size: 20px;
             font-family: 'Reem Kufi Fun', sans-serif !important;
         }
-    
+
     }
-    
+
     @media (max-width:575px) {
         .intro-text {
             h1 {
@@ -146,39 +163,38 @@ border-style: solid;
         }
     }
 
-@media (max-width:991px) {
-    .header-area {
-        .links {
-            display: none;
-        }
-
-        .links.open {
-            position: absolute;
-            left: 0;
-            top: 75px;
-            background-color: $background-color_2;
-            border-radius: 4px;
-            width: 100%;
-            padding: 10px;
-            display: block;
-            text-align: left;
-            z-index: 10;
-            li {
-                span {
-                    font-weight: bold;
-                    color: $color_2;
-                }
-
-                margin: 10px;
-                display: block;
+    @media (max-width:991px) {
+        .header-area {
+            .links {
+                display: none;
             }
-        }
 
-        .toggle-menu {
-            display: inline-block;
+            .links.open {
+                position: absolute;
+                left: 0;
+                top: 75px;
+                background-color: $background-color_2;
+                border-radius: 4px;
+                width: 100%;
+                padding: 10px;
+                display: block;
+                text-align: left;
+                z-index: 10;
+
+                li {
+                    span {
+                        font-weight: bold;
+                        color: $color_2;
+                    }
+
+                    margin: 10px;
+                    display: block;
+                }
+            }
+
+            .toggle-menu {
+                display: inline-block;
+            }
         }
     }
 }
-}
-
-

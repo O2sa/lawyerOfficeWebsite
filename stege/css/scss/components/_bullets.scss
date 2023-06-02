@@ -1,0 +1,52 @@
+
+
+/* Start Nav Bullets */
+/* End Nav Bullets */
+.nav-bullets {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	z-index: 10;
+	.bullet {
+		border: 3px solid var(--main-color);
+		width: 20px;
+		height: 20px;
+		margin: 20px auto;
+		border-radius: 50%;
+		cursor: pointer;
+		position: relative;
+		.my-tooltip {
+			opacity: 0.8;
+            text-align: center;
+            font-weight: bold;
+			position: absolute;
+			background-color: var(--main-color);
+			color: #fff;
+			padding: 8px 10px;
+			right: 28px;
+			top: -12px;
+			width: 107px;
+			display: none;
+			pointer-events: none;
+			transition: 0.3s;
+			&::before {
+				content: "";
+				border-color: transparent transparent transparent var(--main-color);
+				border-width: 10px;
+				position: absolute;
+				right: -20px;
+				top: 50%;
+				border-style: solid;
+				transform: translateY(-50%);
+			}
+		}
+		&:hover {
+			.my-tooltip {
+				display: block;
+				opacity: 1;
+			}
+		}
+	}
+}

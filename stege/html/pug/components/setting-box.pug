@@ -1,18 +1,21 @@
 .setting-box.hide-setting
     .toggle-setting
-        i.fa-regular.fa-envelope.fa-xl
+        i.fa-solid.fa-gear.fa-xl
     .setting-content
+        h3 الإعدادات المرئية
         .option-box.color-options.text-center
-            h4.option-title Color Options
-            - var themes = ["green-theme","blue-theme","red-theme","orange-theme","orange-theme","purple-theme","black-theme"]
+            h4.option-title اختر لون المظهر:
+            - var themes = ["#27ae60","#2980b9","#c0392b","orange"]
             ul.list-unstyled
                 each theme in themes 
                     li(data-theme=theme)
         .option-box.text-center.font-options
-            h4.option-title Font Options
+            h4.option-title اختر الخط:
             - var fonts = ["open", "ubuntu", "roboto", "source"]
             select.form-control.text-center
                 each font in fonts 
                     option(value=font)=font + ' Font'
         .option-box.text-center
-            h4.option-title Backgrounds Options
+            h4.option-title ختر الخلفية
+        .option-box.login-box 
+            include sginupform

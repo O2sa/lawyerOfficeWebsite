@@ -1,6 +1,11 @@
+:root {
+  --main-color   : #27ae60;
+  --setting-width: 178px;
+}
 *{
     box-sizing: border-box;
     direction: rtl;
+  
 }
 body{
 
@@ -63,6 +68,7 @@ section {
     font-size: 40px;
 		font-weight: 400;
 		margin-bottom: 20px;
+		margin: 0 0 60px;
     text-align: center;
 		position: relative;}
 }

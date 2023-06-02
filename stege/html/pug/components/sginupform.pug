@@ -1,0 +1,33 @@
+h3 قم بإنشاء حساب لمتابعة جديدنا:
+button(onclick="document.getElementById('id01').style.display='block'" style='width:auto;') إنشاء حساب
+#id01.modal
+  span.close(onclick="document.getElementById('id01').style.display='none'" title='Close Modal') &times;
+  form.modal-content(action='/action_page.php')
+    .container
+      h3 إنشاء حساب
+      p إملىء الخانات الظاهره أدناه
+      hr
+      label(for='email')
+        b الإميل
+      input(type='text' placeholder='أدخل الايميل' name='email' required='')
+      label(for='name')
+        b الاسم
+      input(type='text' placeholder='أدخل الاسم' name='name' required='')
+      label(for='psw')
+        b كلمة السر
+      input(type='password' placeholder='أدخل كلمة السر' name='psw' required='')
+      label(for='psw-repeat')
+        b كرر كلمة السر
+      input(type='password' placeholder='أعد ادخال كلمة السر' name='psw-repeat' required='')
+      label
+        input(type='checkbox' checked='checked' name='remember' style='margin-bottom:15px')
+        |  تذكرني
+      p
+        | بإنشاءك هذا الحساب فأنت توافق على 
+        a(href='#' style='color:dodgerblue') مبادئنا &amp; سياستنا
+        | .
+      .clearfix
+        button.cancelbtn(type='button' onclick="document.getElementById('id01').style.display='none'") إلغاء
+        button.signupbtn(type='submit') إنشاء
+      h4.text-center
+        a(href="#") لديك حسابًا بالفعل؟
