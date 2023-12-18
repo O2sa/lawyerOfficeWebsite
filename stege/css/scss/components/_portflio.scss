@@ -64,7 +64,7 @@ $border-color_1: transparent transparent #fff transparent;
 
         .logo {
             width: 300px;
-        font-family: 'Gulzar', serif;
+            font-family: 'Tajawal', sans-serif !important;
             padding: 15px;
             font-weight: bold;
             font-size: 26px;
@@ -116,6 +116,8 @@ $border-color_1: transparent transparent #fff transparent;
                 margin-bottom: 8px;
                 background-color: $background-color_2;
                 display: block;
+                width: 34px;
+
             }
         }
 
@@ -172,7 +174,7 @@ $border-color_1: transparent transparent #fff transparent;
             .links.open {
                 position: absolute;
                 left: 0;
-                top: 75px;
+                top: 113px;
                 background-color: $background-color_2;
                 border-radius: 4px;
                 width: 100%;
